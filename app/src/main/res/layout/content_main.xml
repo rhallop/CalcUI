@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_bottom_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_top_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+
+    </RelativeLayout>
+
+    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewScreen"
+            style="@style/textview_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="25%"
+            app:layout_widthPercent="100%"
+            android:gravity="bottom|right"
+            android:maxLength="22"
+            />
+
+        <Button
+            android:id="@+id/buttonc"
+            android:text="@string/operation_ce"
+            style="@style/button_game"
+            android:onClick="ceButtonClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_below="@id/textViewScreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/buttonpm"
+            style="@style/button_game"
+            android:layout_alignTop="@id/buttonc"
+            android:layout_toRightOf="@id/buttonc"
+            android:text="+/-"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonper"
+            style="@style/button_game"
+            android:layout_alignTop="@id/buttonpm"
+            android:layout_toRightOf="@id/buttonpm"
+            android:text="%"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttondiv"
+            style="@style/button_game"
+            android:layout_alignTop="@id/buttonper"
+            android:layout_toRightOf="@id/buttonper"
+            android:tag="/"
+            android:text="@string/operation_divide"
+            android:onClick="operatorClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button7"
+            style="@style/button_game"
+            android:layout_below="@id/buttonc"
+            android:tag="7"
+            android:text="@string/number_seven"
+            android:onClick="numberClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button8"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button7"
+            android:layout_toRightOf="@id/button7"
+            android:tag="8"
+            android:text="@string/number_eight"
+            android:onClick="numberClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button9"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button8"
+            android:layout_toRightOf="@id/button8"
+            android:tag="9"
+            android:text="@string/number_nine"
+            android:onClick="numberClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonx"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button9"
+            android:layout_toRightOf="@id/button9"
+            android:tag="*"
+            android:text="@string/operation_time"
+            android:onClick="operatorClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/button4"
+            style="@style/button_game"
+            android:layout_below="@id/button7"
+            android:tag="4"
+            android:text="@string/number_four"
+            android:onClick="numberClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button4"
+            android:layout_toRightOf="@id/button4"
+            android:tag="5"
+            android:text="@string/number_five"
+            android:onClick="numberClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button6"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button5"
+            android:layout_toRightOf="@id/button5"
+            android:tag="6"
+            android:text="@string/number_six"
+            android:onClick="numberClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonmin"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button6"
+            android:layout_toRightOf="@id/button6"
+            android:tag="-"
+            android:text="@string/operation_minus"
+            android:onClick="operatorClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/button_game"
+            android:layout_below="@id/button4"
+            android:tag="1"
+            android:text="@string/number_one"
+            android:onClick="numberClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button1"
+            android:layout_toRightOf="@id/button1"
+            android:tag="2"
+            android:text="@string/number_two"
+            android:onClick="numberClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button3"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button2"
+            android:layout_toRightOf="@id/button2"
+            android:tag="3"
+            android:text="@string/number_three"
+            android:onClick="numberClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonplus"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button3"
+            android:layout_toRightOf="@id/button3"
+            android:tag="+"
+            android:text="@string/operation_plus"
+            android:onClick="operatorClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/button0"
+            android:layout_below="@id/button1"
+            style="@style/button_game"
+            android:tag="0"
+            android:text="@string/number_zero"
+            android:onClick="numberClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="50%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttoncoma"
+            style="@style/button_game"
+            android:layout_alignTop="@id/button0"
+            android:layout_toRightOf="@id/button0"
+            android:tag="."
+            android:text="@string/operation_decimal_point"
+            android:onClick="numberClicked"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttoneq"
+            style="@style/button_game"
+            android:layout_alignTop="@id/buttoncoma"
+            android:layout_toRightOf="@id/buttoncoma"
+            android:onClick="operatorClicked"
+            android:tag="="
+            android:text="@string/operation_answer"
+            app:layout_heightPercent="15%"
+            app:layout_widthPercent="25%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+</LinearLayout>
